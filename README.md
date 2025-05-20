@@ -35,3 +35,18 @@ for k in range(1, 50):
 - 1 = Não Elegível
 - 2 = Elegível com Análise
 - 3 = Elegível
+
+## Como usar?
+
+```python
+import joblib
+
+# Carregar o modelo treinado
+modelo = joblib.load('modelo_knn.joblib')
+
+# Fazer uma previsão
+entrada = [[10000, 5000, 0.92, 35, 3000]]  # Exemplo
+saida = modelo.predict(entrada)
+
+print(f"Resultado da previsão: {saida}")
+```
