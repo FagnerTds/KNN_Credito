@@ -6,6 +6,7 @@
 ## Melhor valor de K
 - K = 15 (exemplo, substitua pelo seu valor real)
 
+##Como Chegar no melhor k
 ```python
 for k in range(1, 50):
     knn = KNeighborsClassifier(n_neighbors=k)
